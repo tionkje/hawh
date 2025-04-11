@@ -14,8 +14,10 @@ async function clicked() {
 
 <h2>{page.params.webhookId.replace(/_/g,' ')}</h2>
 <br>
-
+<form method="POST">
+  <input type="hidden" name="webhookId" value={page.params.webhookId} />
 <button onclick={clicked}>Click Me</button>
+</form>
 
 <style>
   button {
