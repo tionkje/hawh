@@ -9,52 +9,52 @@ onlyBuiltDependencies:
 
 devDependencies:
   '@eslint/compat':
-    specifier: ^1.2.5
+    specifier: ^1.2.8
     version: 1.2.8(eslint@9.24.0)
   '@eslint/js':
-    specifier: ^9.18.0
+    specifier: ^9.24.0
     version: 9.24.0
   '@sveltejs/adapter-auto':
-    specifier: ^4.0.0
-    version: 4.0.0(@sveltejs/kit@2.20.5)
+    specifier: ^6.0.0
+    version: 6.0.0(@sveltejs/kit@2.20.5)
   '@sveltejs/kit':
-    specifier: ^2.16.0
+    specifier: ^2.20.5
     version: 2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.25.12)(vite@6.2.6)
   '@sveltejs/vite-plugin-svelte':
-    specifier: ^5.0.0
+    specifier: ^5.0.3
     version: 5.0.3(svelte@5.25.12)(vite@6.2.6)
   eslint:
-    specifier: ^9.18.0
+    specifier: ^9.24.0
     version: 9.24.0
   eslint-config-prettier:
-    specifier: ^10.0.1
+    specifier: ^10.1.2
     version: 10.1.2(eslint@9.24.0)
   eslint-plugin-svelte:
-    specifier: ^3.0.0
+    specifier: ^3.5.1
     version: 3.5.1(eslint@9.24.0)(svelte@5.25.12)
   globals:
     specifier: ^16.0.0
     version: 16.0.0
   prettier:
-    specifier: ^3.4.2
+    specifier: ^3.5.3
     version: 3.5.3
   prettier-plugin-svelte:
     specifier: ^3.3.3
     version: 3.3.3(prettier@3.5.3)(svelte@5.25.12)
   svelte:
-    specifier: ^5.0.0
+    specifier: ^5.25.12
     version: 5.25.12
   svelte-check:
-    specifier: ^4.0.0
+    specifier: ^4.1.5
     version: 4.1.5(svelte@5.25.12)(typescript@5.8.3)
   typescript:
-    specifier: ^5.0.0
+    specifier: ^5.8.3
     version: 5.8.3
   typescript-eslint:
-    specifier: ^8.20.0
+    specifier: ^8.29.1
     version: 8.29.1(eslint@9.24.0)(typescript@5.8.3)
   vite:
-    specifier: ^6.2.5
+    specifier: ^6.2.6
     version: 6.2.6
 
 packages:
@@ -590,8 +590,8 @@ packages:
       acorn: 8.14.1
     dev: true
 
-  /@sveltejs/adapter-auto@4.0.0(@sveltejs/kit@2.20.5):
-    resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
+  /@sveltejs/adapter-auto@6.0.0(@sveltejs/kit@2.20.5):
+    resolution: {integrity: sha512-7mR2/G7vlXakaOj6QBSG9dwBfTgWjV+UnEMB5Z6Xu0ZbdXda6c0su1fNkg0ab0zlilSkloMA2NjCna02/DR7sA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
