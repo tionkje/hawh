@@ -9,7 +9,7 @@
   });
 </script>
 
-<h1>Bedankt voor u aandacht</h1>
+<h1>Bedankt voor uw aandacht</h1>
 
 <style>
   :global(body) {
