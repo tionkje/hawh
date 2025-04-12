@@ -1,27 +1,24 @@
 <script lang="ts">
-import { page } from '$app/state';
+  import { page } from '$app/state';
 
-async function clicked() {
-  const res = await fetch(`http://homeassistant.local:8123/api/webhook/${page.params.webhookId}`)
-  .then(res=>{
-      console.log('STATUS:',res.status, res.statusText);
-      return res.text();
-  })
+  let loading = $state(false);
 
-  console.log('RESULT:', res);
-}
 </script>
 
-<h2>{page.params.webhookId.replace(/_/g,' ')}</h2>
-<br>
-<form method="POST">
+<h2>{page.params.webhookId.replace(/_/g, ' ')}</h2>
+<br />
+<form method="POST" onsubmit={() => (loading = true)}>
   <input type="hidden" name="webhookId" value={page.params.webhookId} />
-<button onclick={clicked}>Click Me</button>
+  {#if loading}
+    <div>Loading...</div>
+  {:else}
+    <button>Click Me</button>
+  {/if}
 </form>
 
 <style>
-  button {
-    background-color: #FF0000; /* Red */
+  button,div {
+    background-color: #ff0000; /* Red */
     border: none;
     color: white;
     padding: 20px 40px;

@@ -1,3 +1,5 @@
+import { redirect } from "@sveltejs/kit";
+
 export const actions = {
   default: async ({ cookies, request }) => {
     const data = await request.formData();
@@ -10,5 +12,7 @@ export const actions = {
         console.log('STATUS:', res.status, res.statusText);
         return res.text();
       })
+
+    redirect(303, '/bedankt');
   }
 };
